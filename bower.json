@@ -1,0 +1,28 @@
+{
+  "name": "webpack-starter",
+  "description": "A light foundation for your next frontend project based on webpack.",
+  "main": "",
+  "authors": [
+    "webkid.io"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "startkit",
+    "frontend",
+    "es6",
+    "javascript",
+    "webdev"
+  ],
+  "homepage": "https://github.com/wuyuedefeng/webpack-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto.js": "^1.1.6"
+  }
+}
