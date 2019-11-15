@@ -28,8 +28,10 @@ $(function () {
     // },
     on:{
       slideChange: function() {
-        $('.swiper-slide .animated').removeClass('fadeInUp')
-        $(`.swiper-slide${this.activeIndex} .animated`).addClass('fadeInUp')
+        $('.swiper-slide .animated').removeClass('fadeInUp fadeInLeft')
+        $(`.swiper-slide${this.activeIndex} .animated`).forEach(item => {
+          $(item).addClass($(item).data('animate') || 'fadeInUp')
+        })
 
         if (this.activeIndex > 0 && this.activeIndex < 4) {
           $('.swiper-indicator').css('display', 'block')
