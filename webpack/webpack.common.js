@@ -34,6 +34,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: require.resolve('zepto'),
+        use: ['exports-loader?window.Zepto','script-loader']
+      },
+      {
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'

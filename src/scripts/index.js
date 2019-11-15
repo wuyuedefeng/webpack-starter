@@ -1,6 +1,7 @@
 import 'normalize.css'
 import '../styles/index.scss';
 import Swiper from 'swiper'
+import $ from 'zepto'
 
 $(function () {
   var mySwiper = new Swiper ('.swiper-container', {
